@@ -1,31 +1,98 @@
-# Your custom Twilio Flex Plugin
+# Plugin limit characters in Flex for WhatsApp - English Version
 
-Twilio Flex Plugins allow you to customize the appearance and behavior of [Twilio Flex](https://www.twilio.com/flex). If you want to learn more about the capabilities and how to use the API, check out our [Flex documentation](https://www.twilio.com/docs/flex).
+## Utility
+```
+This plugin has a character counter and displays a warning message to the agent if it exceeds 1600 characters in the text field. When this limit is reached, the plugin disables the send button, preventing the agent from sending the message that will fail.
 
-## Setup
-
-Make sure you have [Node.js](https://nodejs.org) as well as [`npm`](https://npmjs.com). We support Node >= 10.12 (and recommend the _even_ versions of Node). Afterwards, install the dependencies by running `npm install`:
-
-```bash
-cd 
-
-# If you use npm
-npm install
 ```
 
-Next, please install the [Twilio CLI](https://www.twilio.com/docs/twilio-cli/quickstart) by running:
+## Prerequisites
+```
+Have installed:
+- Node
+- Npm
+- Twilio CLI
+- Flex Plugins
 
-```bash
-brew tap twilio/brew && brew install twilio
+To install twilio cli use the following command:
+
+- npm install twilio-cli -g
+
+To install flex plugins use the following command:
+
+- twilio plugins:install @twilio-labs/plugin-flex
+
 ```
 
-Finally, install the [Flex Plugin extension](https://github.com/twilio-labs/plugin-flex/tree/v1-beta) for the Twilio CLI:
+## Installation
+```
+To use this project, clone it to your computer, using the git clone command and the url of that repository.
+After downloading, run the following command:
 
-```bash
-twilio plugins:install @twilio-labs/plugin-flex@beta
+- npm install
+
+To run locally use the following command:
+
+- twilio flex:plugins:start
+
+To deploy use the following commands:
+
+- twilio flex:plugins:deploy --major --changelog "plugin-from-indentification-whatsapp" --description "Plugin for whatsapp identification"
+
+- twilio flex:plugins:release --plugin plugin-from-indentification-whatsapp@1.0.0 --name "plugin-from-indentification-whatsapp" --description "Plugin for whatsapp identification"
+
 ```
 
-## Development
+## Authors
 
-Run `twilio flex:plugins --help` to see all the commands we currently support. For further details on Flex Plugins refer to our documentation on the [Twilio Docs](https://www.twilio.com/docs/flex/developer/plugins/cli) page.
+- Rafaela Montanari - rmontanari@mundolivre.digital
 
+
+# Plugin limite caracteres no Flex para WhatsApp - Versão Português
+
+## Utilidade
+```
+Este plugin possui um contador de caracteres e apresenta uma mensagem de aviso para o agente, caso ultrapasse 1600 caracteres no campo de texto. Quando atingido este limite o plugin desabilita o botão de envio, impedindo que o agente faça o envio da mensagem que irá falhar.
+
+```
+
+## Pré-requisitos
+```
+Ter instalado:
+- Node
+- Npm
+- Twilio Cli
+- Flex Plugins
+
+Para fazer a instalação do twilio cli use o seguinte comando:
+
+- npm install twilio-cli -g
+
+Para fazer a instalação do  flex plugins use o seguinte comando:
+
+- twilio plugins:install @twilio-labs/plugin-flex
+
+```
+
+## Instalação
+```
+Para usar esse projeto, clone ele para o seu computador, usando o comando git clone e  a url desse repositorio.
+Após ter baixado, executar o seguinte comando:
+
+- npm install
+
+Para rodar localmente utilize o seguinte comando:
+
+- twilio flex:plugins:start
+
+Para dar deploy use os seguintes comandos:
+
+- twilio flex:plugins:deploy --major --changelog "plugin-from-indentification-whatsapp" --description "Plugin for whatsapp identification"
+
+- twilio flex:plugins:release --plugin plugin-from-indentification-whatsapp@1.0.0 --name "plugin-from-indentification-whatsapp" --description "Plugin for whatsapp identification"
+
+```
+
+## Autores
+
+- Rafaela Montanari - rmontanari@mundolivre.digital

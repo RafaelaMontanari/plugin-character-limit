@@ -21,8 +21,8 @@ export default class CharacterLimitPlugin extends FlexPlugin {
    */
   async init(flex, manager) {
     this.registerReducers(manager);
-    //flex.DefaultTaskChannels.ChatWhatsApp.charLimit = 1600;
-    flex.MessageInput.defaultProps.charLimit = 1600;
+    flex.DefaultTaskChannels.ChatWhatsApp.charLimit = 1600;
+    flex.Manager.getInstance().strings.MessageCharacterCountReached = "Limite de caracteres atingido - {{currentCharCount}} / {{maxCharCount}}";
   }
 
   /**
